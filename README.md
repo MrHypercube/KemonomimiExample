@@ -1,4 +1,4 @@
-#  What is a kemonomimi.
+#  What is a kemonomimi?
 
 A kemonomimi Is a type of human that appears in Japaneese anime and manga. They're like humans except they have traits of a certain animal like their ears and their tail. The most common types of kemonomimi are cat, fox, dog, and rabbit.
 
