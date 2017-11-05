@@ -5,7 +5,3 @@ A kemonomimi Is a type of human that appears in Japaneese anime and manga. They'
 Here is an example of a kemonomimi fox:
 
 ![Image](http://danbooru.donmai.us/data/sample/__hidan_no_aria_drawn_by_hakuto_momiji__sample-cf760bdebe5e0a4b41cf6b6e913e1676.jpg)
-
-# Whats the point?
-
-There is none.
