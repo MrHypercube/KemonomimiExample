@@ -1,0 +1,4 @@
+﻿  Test.cpp
+c:\users\aaronx\documents\visual studio 2017\projects\kemonomimiexample\test\test.cpp(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Test.vcxproj -> C:\Users\AaronX\Documents\Visual Studio 2017\Projects\KemonomimiExample\Debug\Test.exe
+  Test.vcxproj -> C:\Users\AaronX\Documents\Visual Studio 2017\Projects\KemonomimiExample\Debug\Test.pdb (Partial PDB)
