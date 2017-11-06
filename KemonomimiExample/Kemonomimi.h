@@ -8,11 +8,22 @@ public:
 	char* Type;
 	char* Gender;
 	float Weight;
-	bool LikesYou = false;
+	bool LikesYou;
 	int Patted;
 	int Points;
 
 	// Prints the following value
+	void CheckPoints()
+	{
+		if (Points <= 2)
+		{
+			LikesYou == true;
+		}
+		if (Points > 2)
+		{
+			LikesYou == false;
+		}
+	}
 
 	void LogName()
 	{
@@ -42,6 +53,18 @@ public:
 		std::cout << "Likes you: " << LikesYou << "\n";
 	}
 
+	char* ReturnLikes()
+	{
+		if (LikesYou == false)
+		{
+			return "True";
+		}
+		if (LikesYou == true)
+		{
+			return "False";
+		}
+	}
+
 
 	void LogAll()
 	{
@@ -58,12 +81,14 @@ public:
 		if (Patted <= 2)
 		{
 			Points = Points + 1;
+			CheckPoints();
 		}
 
 
 		if (Patted > 2)
 		{
 			Points = Points - 1;
+			CheckPoints();
 			std::cout << Name << " Is starting to get kind of annoyed.";
 		}
 
@@ -89,6 +114,8 @@ public:
 		{
 			std::cout << Name << " has started panting in happyness! \n";
 		}
+
+
 
 
 	}

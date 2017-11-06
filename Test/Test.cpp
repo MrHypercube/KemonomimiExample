@@ -31,38 +31,41 @@ int main()
 	std::cout << "\n Would you like to headpat " << Test->Name << "?" << "\n";
 	std::cout << "\n";
 	std::cout << "\n";
-	std::cout <<  "A: Yes \n";
+	std::cout << "A: Yes \n";
 	std::cout << "\n";
 	std::cout << "B: Yes \n";
 	std::cout << "\n";
 	std::cout << "P: Get the ammount of times patted \n";
 	std::cout << "\n";
+	std::cout << "C: Check if " << Test->Name << " likes you." << "\n";
 
-		start:	
+start:
 
-		std::cin >> x;
+	std::cin >> x;
 
-		if (x == "A" || x == "a")
-		{
-			Test->Headpat();
-			goto start;
-			
-		}
+	if (x == "A" || x == "a")
+	{
+		Test->Headpat();
+		goto start;
 
-		if (x == "B" || x == "b")
-		{
-			std::cout << "Ok then I guess. \n";
-			goto start;
-		}
+	}
 
-		if (x == "P" || x == "p")
-		{
-			std::cout << Test->Patted << "\n";
-			goto start;
-		}
+	if (x == "B" || x == "b")
+	{
+		std::cout << "Ok then I guess. \n";
+		goto start;
+	}
 
-
-
+	if (x == "P" || x == "p")
+	{
+		std::cout << Test->Patted << "\n";
+		goto start;
+	}
+	if (x == "C" || x == "c")
+	{
+		std::cout << Test->ReturnLikes() << "\n";
+		goto start;
+	}
 	// End the app
     return 0;
 }
