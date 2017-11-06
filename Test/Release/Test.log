@@ -1,4 +1,7 @@
-﻿  Test.cpp
-Test.cpp(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-Test.cpp(66): error C2039: 'ReturnLikes': is not a member of 'Kemonomimi'
-  C:\Users\AaronX\Documents\Visual Studio 2017\Projects\KemonomimiExample\KemonomimiExample\Kemonomimi.h(4): note: see declaration of 'Kemonomimi'
+﻿  Generating code
+  2 of 94 functions ( 2.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    3 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Test.vcxproj -> C:\Users\AaronX\Documents\Visual Studio 2017\Projects\KemonomimiExample\Release\Test.exe
+  Test.vcxproj -> C:\Users\AaronX\Documents\Visual Studio 2017\Projects\KemonomimiExample\Release\Test.pdb (Full PDB)

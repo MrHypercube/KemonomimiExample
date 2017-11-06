@@ -17,11 +17,23 @@ public:
 	{
 		if (Points <= 2)
 		{
-			LikesYou == true;
+			LikesYou = true;
 		}
 		if (Points > 2)
 		{
-			LikesYou == false;
+			LikesYou = false;
+		}
+	}
+
+	char* ReturnLikes()
+	{
+		if (LikesYou == true)
+		{
+			return "True";
+		}
+		if (LikesYou == false)
+		{
+			return "False";
 		}
 	}
 
@@ -53,43 +65,30 @@ public:
 		std::cout << "Likes you: " << LikesYou << "\n";
 	}
 
-	char* ReturnLikes()
-	{
-		if (LikesYou == false)
-		{
-			return "True";
-		}
-		if (LikesYou == true)
-		{
-			return "False";
-		}
-	}
-
 
 	void LogAll()
 	{
 		std::cout << Type << "\n";
 		std::cout << Gender << "\n";
 		std::cout << Weight << "\n";
-		std::cout << "Likes you: " << LikesYou << "\n";
+		std::cout << "Likes you: " << ReturnLikes() << "\n";
 	}
 
 	// A fun function
 
 	void Headpat()
 	{
+		Patted = Patted + 1;
 		if (Patted <= 2)
 		{
 			Points = Points + 1;
-			CheckPoints();
 		}
 
 
 		if (Patted > 2)
 		{
 			Points = Points - 1;
-			CheckPoints();
-			std::cout << Name << " Is starting to get kind of annoyed.";
+			std::cout << Name << " Is starting to get kind of annoyed. \n";
 		}
 
 
@@ -99,6 +98,7 @@ public:
 			if (Patted < 2)
 			{
 				std::cout << Name << " Is really loving you right now! \n";
+				CheckPoints();
 			}
 
 		}
@@ -107,12 +107,14 @@ public:
 		if (Type == "Cat" || Type == "cat" || Type == "Neko" || Type == "neko")
 		{
 			std::cout << Name << " has started purring! \n";
+			CheckPoints();
 		}
 
 
 		if (Type == "Dog" || Type == "dog" || Type == "Wolf" || Type == "wolf" || Type == "Okami" || Type == "okami")
 		{
 			std::cout << Name << " has started panting in happyness! \n";
+			CheckPoints();
 		}
 
 

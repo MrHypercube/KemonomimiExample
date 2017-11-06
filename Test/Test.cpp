@@ -66,6 +66,11 @@ start:
 		std::cout << Test->ReturnLikes() << "\n";
 		goto start;
 	}
+	if (x != "A" || x != "a" || x != "B" || x != "b" || x != "P" || x != "P" || x != "C" || x != "c")
+	{
+		std::cout << "Unknown command. \n";
+		goto start;
+	}
 	// End the app
     return 0;
 }
