@@ -21,7 +21,7 @@ int main()
 	Test->Type = "Fox";
 	Test->Gender = "Female";
 	Test->Weight = 200.00f;
-
+	Test->NameBeforeMessage = true;
 	// Log everything.
 
 	Test->LogAll();
@@ -38,6 +38,7 @@ int main()
 	std::cout << "P: Get the ammount of times patted \n";
 	std::cout << "\n";
 	std::cout << "C: Check if " << Test->Name << " likes you." << "\n";
+	std::cout << "\n";
 
 start:
 
